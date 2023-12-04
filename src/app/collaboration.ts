@@ -32,7 +32,7 @@ export function createWebsocketProvider(
     doc.load();
   }
 
-  return true;
+  return undefined;
   
   // @ts-ignore
   // return new WebsocketProvider(
