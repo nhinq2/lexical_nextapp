@@ -72,6 +72,7 @@ import YouTubePlugin from './plugins/YouTubePlugin';
 import PlaygroundEditorTheme from './themes/PlaygroundEditorTheme';
 import ContentEditable from './ui/ContentEditable';
 import Placeholder from './ui/Placeholder';
+import { CustomParagraphNode } from "./nodes/CustomParagraphNode";
 
 const skipCollaborationInit =
   // @ts-ignore
@@ -119,7 +120,7 @@ export default function Editor(): JSX.Element {
     onError: (error: Error) => {
       throw error;
     },
-    theme: PlaygroundEditorTheme,
+    theme: PlaygroundEditorTheme
   };
 
   useEffect(() => {
